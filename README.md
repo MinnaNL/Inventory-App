@@ -1,3 +1,11 @@
+#Inventiq
+##Inventory App
+
+*Backend + Frontend*
+
+I built it using: JavaScript, Next.js, React,Bootstrap, Vercel, Docker, PGadmin and Prisma.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
