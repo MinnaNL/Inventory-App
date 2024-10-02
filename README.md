@@ -1,7 +1,7 @@
-#Inventiq
-##Inventory App
+# Inventiq
+## Inventory App
 
-*Backend + Frontend*
+Backend + Frontend
 
 I built it using: JavaScript, Next.js, React,Bootstrap, Vercel, Docker, PGadmin and Prisma.
 
