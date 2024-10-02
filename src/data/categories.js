@@ -4,7 +4,7 @@ export class ItemCategory {
 	static VEGETABLES = "Vegetables";
 	static FRUIT = "Fruit";
 	static SNACKS = "Snacks";
-	static BEVERAGES = "beverages";
+	static BEVERAGES = "Beverages";
 	static HOUSEHOLD = "Household";
 
 	// Create an array of all the defined categories

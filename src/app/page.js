@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default async function Home() {
 	return (
-		<main className="mvw-100 mw-100">
+		<main className="">
 			<div className="mx-auto p-2 mb-2 d-flex justify-content-center">
 				<Image
 					src="/logo.svg"

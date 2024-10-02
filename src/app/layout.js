@@ -1,10 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/context/auth";
-import ClientBootstrap from "./ClientBootstrap";
-
 const inter = Inter({ subsets: ["latin"] });
-const bootstrap = ClientBootstrap;
+
 
 export const metadata = {
 	title: "Minna Nordlund Inventiq",

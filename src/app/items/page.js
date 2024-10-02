@@ -80,7 +80,7 @@ export default function ItemsPage() {
 	return (
 		<main>
 			<div>
-        {/*header with*/}
+        {/*header with greeting*/}
 				<header>
 					{user ? (
 						<p className="text-center">
