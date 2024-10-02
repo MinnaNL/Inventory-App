@@ -18,7 +18,7 @@ body, main {
   color: #202122;
   background: #c2cce0;
   min-height:100vh;
-  overflow:hidden;
+  overflow-x:hidden;
   max-width: 100%;
 
 }

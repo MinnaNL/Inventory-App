@@ -10,7 +10,7 @@ import { ItemCategory } from "@/data/categories"; // Importing item categories f
 // `onClose` is a function to close the modal, and `itemAdded` is a callback for when an item is successfully added.
 export default function ItemForm({ onClose, itemAdded }) {
 	const bootstrap = ClientBootstrap(); // Initializing the client Bootstrap.
-	const { token } = useAuth(); // Extracting the `token` from the authentication context.
+	const { token, user } = useAuth(); // Extracting the `token` from the authentication context.
 
 	// Defining state variables to hold the form input values.
 	const [name, setName] = useState(""); // State to manage item name.
@@ -59,7 +59,6 @@ export default function ItemForm({ onClose, itemAdded }) {
 	//Return
 	return (
 		<div className="w-100">
-			{" "}
 			{/*Modal*/}
 			<h4 class="modal-title h4 mb-2 text-center">Add item</h4>
 			{/*Submit form for new item*/}

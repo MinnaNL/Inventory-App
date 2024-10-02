@@ -33,7 +33,6 @@ function Header({ itemAdded }) {
 	//Return
 	return (
 		<header className="bg-light">
-			{" "}
 			{/* Header*/}
 			{/* {user ? (
 						<p className="pg-primary text-center p-0 mb-0">

@@ -12,8 +12,7 @@ export default function ItemsPage() {
 	const [loading, setLoading] = useState(true);
 	const [editingItemId, setEditingItemId] = useState(null);
 	const [isEditModalOpen, setIsEditModalOpen] = useState(false);
-	const { token, user } = useAuth();
-  
+	const { token, user} = useAuth(); 
   ClientBootstrap();
 	//UserGreeting ();
 
@@ -75,20 +74,19 @@ export default function ItemsPage() {
 		);
 		setIsEditModalOpen(false); // Close the form after update
 	};
-
 //Return
 	return (
 		<main>
 			<div>
-        {/*header with greeting*/}
+        {/*header with greeting (does not work)*/}
 				<header>
 					{user ? (
-						<p className="text-center">
+						<p className="darkblue text-center p-0 mb-0">
 							Welcome to your inventory, {user.name}!
 						</p>
 					) : (
 						<p className="darkblue text-center p-0 mb-0">
-							Welcome to your inventory!
+							Welcome to the inventory!
 						</p>
 					)}
 				</header>
