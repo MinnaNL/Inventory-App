@@ -32,9 +32,10 @@ function Header({ itemAdded }) {
 
 	//Return
 	return (
-		<header className="bg-light">
-			{/* Header*/}
-			{/* {user ? (
+		<header className="bg-light">			{/* Header*/}
+			{/* User greeting if logged in (missing logic to function)*/}
+
+						{/* {user ? (
 						<p className="pg-primary text-center p-0 mb-0">
 							Welcome to your inventory, {user.name}!
 						</p>

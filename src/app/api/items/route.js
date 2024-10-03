@@ -8,7 +8,6 @@ export async function GET(req) {
 	const url = new URL(req.url);
 	let items;
 	try {
-		// Fetch all items without any filters
 		items = await prisma.item.findMany();
 	} catch (error) {
 		return NextResponse.json(
