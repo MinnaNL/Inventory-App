@@ -19,30 +19,53 @@ export default function ItemsPage() {
 	// Fetch items from API
 	useEffect(() => {
 		const fetchItems = async () => {
-			setLoading(true);
-
-			try {
-				const response = await fetch("/api/items"); // Fetch all items
-				const data = await response.json();
-				setItems(data);
-			} catch (error) {
-				console.error("Error fetching items:", error);
-			}
-
-			setLoading(false);
+		  if (!token) return; // <-- Don't fetch items if user is not logged in
+	  
+		  setLoading(true);
+		  try {
+			const response = await fetch("/api/items", {
+			  headers: {
+				Authorization: `Bearer ${token}`, // <-- Add token to request headers
+			  },
+			});
+			const data = await response.json();
+			setItems(data);
+		  } catch (error) {
+			console.error("Error fetching items:", error);
+		  }
+		  setLoading(false);
 		};
 		fetchItems();
-	}, []);
+	  }, [token]); // <-- Make sure this runs when `token` changes
 
 	// Handle new item addition
 	const handleItemAdded = (newItem) => {
 		setItems((prevItems) => [newItem, ...prevItems]);
 	};
 
-	if (loading) {
-		return <p>Loading...</p>;
-	}
-
+	// If the user is not logged in, show a message
+if (!token) {
+	return (
+		<main>
+		<div>
+				<header>
+	
+						<p className="darkblue text-center p-0 mb-0">
+							Could not access inventory!
+						</p>
+				</header>
+				<Header/>
+	  <div className="text-center mt-5">
+		<p>Please log in to see your inventory</p>
+	  </div>
+	 </div>
+	 </main>
+	);
+  }
+  if (loading) {
+	return <p>Loading...</p>;
+}
+  
 	// Delete an item
 	const deleteItem = async (itemId) => {
 		if (!token) return;
@@ -79,17 +102,11 @@ export default function ItemsPage() {
 		<main>
 			<div>
         {/*header with greeting (does not work)*/}
-				<header>
-					{user ? (
-						<p className="darkblue text-center p-0 mb-0">
-							Welcome to your inventory, {user.name}!
-						</p>
-					) : (
-						<p className="darkblue text-center p-0 mb-0">
-							Welcome to the inventory!
-						</p>
-					)}
-				</header>
+<header>
+<p className="darkblue text-center p-0 mb-0">
+      Welcome to your inventory!
+    </p>
+</header>
 
 				<Header itemAdded={handleItemAdded} />
 				<div className="container d-flex flex-column p-2 mt-3 justify-content-center">
