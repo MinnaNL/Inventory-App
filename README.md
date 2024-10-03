@@ -44,8 +44,10 @@ npm run dev
 6. Öppna [http://localhost:3000](http://localhost:3000) i webbläsaren.
 
 För att använda inventiq appen: 
-Registrera eller logga in för att kunna köra CRUD-operationer för items (create, read, update, delete). Dock möjligt att se inventory utan att vara inloggad (read). 
+Registrera eller logga in för att kunna köra CRUD-operationer för items (create, read, update, delete). Om man kollar [http://localhost:3000/items](http://localhost:3000/items) och inte är inloggad, kan man inte se inventory eller ändra något.
 
+///
+///
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
