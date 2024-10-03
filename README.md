@@ -52,10 +52,6 @@ Registrera eller logga in för att kunna köra CRUD-operationer för items (crea
 
 <img width="1470" alt="Screenshot 2024-10-03 at 18 36 56" src="https://github.com/user-attachments/assets/436a695c-a7e5-4aae-9f7f-db248eb599cd">
 
-<img width="1470" alt="Screenshot 2024-10-03 at 18 36 05" src="https://github.com/user-attachments/assets/1b622715-0fc4-4a54-9702-cbc8aad42cf0">
-
-<img width="1470" alt="Screenshot 2024-10-03 at 18 37 17" src="https://github.com/user-attachments/assets/deeab4f6-82e7-4786-8544-313df20a01d9">
-
 <img width="1470" alt="Screenshot 2024-10-03 at 18 36 24" src="https://github.com/user-attachments/assets/40aa0af4-553a-4f15-b52c-d1052257d038">
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
